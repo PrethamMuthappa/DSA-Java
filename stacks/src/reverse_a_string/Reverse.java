@@ -8,16 +8,14 @@ public class Reverse {
 	public static void main(String[] args) {
 		rev rr=new rev();
 		rr.stringrev();
- 
 	}
-
 }
 
-
-class rev{
+class rev  {
 	
 	Stack<String> stack=new Stack<String>();
 	Scanner sc=new Scanner(System.in);
+	String abc;
 	
 	public void stringrev() {
 		System.out.println("ENTER YOUR STRING \n");
@@ -25,19 +23,17 @@ class rev{
 		
 		for(int i=0;i<ch.length();i++) {
 			
-			String abc=String.valueOf(ch.charAt(i));
+			abc=String.valueOf(ch.charAt(i));
 			
 			stack.push(abc);
 		}
-		
-		System.out.println(stack);
-		
-		for(int j=0;j<stack.size();i--) {
-			
-		}
-		
-	
-			
-		
+	       System.out.println("THE REVERSE OF STRING IS \n");
+			while(!stack.empty())
+			{
+			String mypoped = stack.pop();
+			System.out.print(mypoped);
+			}
+
+		System.out.println();
 	}
 }
