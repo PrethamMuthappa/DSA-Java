@@ -65,6 +65,7 @@ class LinkedList{
 			
 		}
 		head=prev;
+	
 	}
 	}
 
